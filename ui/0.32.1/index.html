@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./app-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="./app-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f6f3" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Skillshare" />
+    <title>Skillshare Web Dashboard</title>
+    <!-- Body text uses the system font. Kalam is only for Playful headings. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // FOUC prevention: apply the Playful style and dark mode before first paint.
+      // Clean is the default (no data-theme on <html>); only an explicit Playful sets it.
+      // URL ?theme= param overrides localStorage (values: dark, light, playful, clean).
+      // ?mode= (dark, light) and ?style= (playful, clean) name one axis each and win over it.
+      (function () {
+        var q = new URLSearchParams(location.search);
+        var get = function (key) {
+          return (q.get(key) || '').toLowerCase();
+        };
+        [get('theme'), get('mode')].forEach(function (p) {
+          if (p === 'dark' || p === 'light') localStorage.setItem('skillshare-theme-preference', p);
+        });
+        [get('theme'), get('style')].forEach(function (p) {
+          if (p === 'playful' || p === 'clean') localStorage.setItem('skillshare-style', p);
+        });
+        var style = localStorage.getItem('skillshare-style');
+        var pref = localStorage.getItem('skillshare-theme-preference');
+        if (style === 'playful') {
+          document.documentElement.setAttribute('data-theme', 'playful');
+        }
+        var dark =
+          pref === 'dark' ||
+          (pref === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+        if (dark) document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-CCq5HN9W.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-XKyaHtl9.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-react-b2NgTULZ.js">
+    <link rel="modulepreload" crossorigin href="./assets/PageHeader-B5J9dJ-4.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-tanstack-query-Dijhc_ib.js">
+    <link rel="modulepreload" crossorigin href="./assets/useSharedQueries-e-4rlTgm.js">
+    <link rel="modulepreload" crossorigin href="./assets/targetView-BYSuesJR.js">
+    <link rel="modulepreload" crossorigin href="./assets/resourceNames-08tdP2NB.js">
+    <link rel="modulepreload" crossorigin href="./assets/browser-BaLXMMWa.js">
+    <link rel="modulepreload" crossorigin href="./assets/hooksView-CIfhyi5O.js">
+    <link rel="modulepreload" crossorigin href="./assets/mcpView-BOv-GUOR.js">
+    <link rel="modulepreload" crossorigin href="./assets/DialogShell-CM0ivR0B.js">
+    <link rel="modulepreload" crossorigin href="./assets/copy-DwjSrLTg.js">
+    <link rel="modulepreload" crossorigin href="./assets/segSlide-_Nh8ZbBb.js">
+    <link rel="modulepreload" crossorigin href="./assets/circle-arrow-up-CJlFc04U.js">
+    <link rel="modulepreload" crossorigin href="./assets/queryEvents-MOMyPwAs.js">
+    <link rel="modulepreload" crossorigin href="./assets/auditCache-DMEmG7WM.js">
+    <link rel="modulepreload" crossorigin href="./assets/scalarText-DCpTjHA6.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-CBFsDWcv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

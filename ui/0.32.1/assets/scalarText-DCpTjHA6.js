@@ -1,0 +1,1 @@
+function e(e){return typeof e==`string`||typeof e==`number`||typeof e==`boolean`?String(e):``}export{e as t};
