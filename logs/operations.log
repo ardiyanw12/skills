@@ -1,0 +1,6 @@
+{"ts":"2026-11-26T14:26:33+07:00","cmd":"init","args":{"git_init":true,"source_created":true,"targets_added":2},"status":"ok","ms":98421}
+{"ts":"2026-11-26T14:27:09+07:00","cmd":"install","args":{"mode":"global","skipped_skills":["skillshare"],"source":"global-config"},"status":"ok","ms":43}
+{"ts":"2026-11-26T14:27:24+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":71}
+{"ts":"2026-11-26T14:27:25+07:00","cmd":"check","args":{"errors":0,"repos_checked":0,"scope":"global","skills_checked":0,"updates_available":0},"status":"ok","ms":4}
+{"ts":"2026-11-26T14:27:29+07:00","cmd":"check","args":{"errors":0,"repos_checked":0,"scope":"global","skills_checked":0,"updates_available":0},"status":"ok","ms":3888}
+{"ts":"2026-11-26T14:29:54+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":42}
