@@ -81,3 +81,11 @@
 {"ts":"2026-11-26T14:38:04+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":78}
 {"ts":"2026-11-26T14:38:24+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":39}
 {"ts":"2026-11-26T14:38:24+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":185}
+{"ts":"2026-11-26T14:38:41+07:00","cmd":"push","args":{"message":"Update skills from Herdr","pull":true},"status":"error","msg":".gitignore changed while pulling; commit it, then run: skillshare push","ms":6695}
+{"ts":"2026-11-26T14:38:41+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":120}
+{"ts":"2026-11-26T14:38:42+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":119}
+{"ts":"2026-11-26T14:38:42+07:00","cmd":"check","args":{"errors":0,"repos_checked":0,"scope":"global","skills_checked":0,"updates_available":0},"status":"ok","ms":4}
+{"ts":"2026-11-26T14:38:45+07:00","cmd":"check","args":{"errors":0,"repos_checked":0,"scope":"global","skills_checked":0,"updates_available":0},"status":"ok","ms":2941}
+{"ts":"2026-11-26T14:39:04+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":83}
+{"ts":"2026-11-26T14:39:24+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":42}
+{"ts":"2026-11-26T14:39:24+07:00","cmd":"diff","args":{"scope":"global"},"status":"ok","ms":149}
