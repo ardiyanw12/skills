@@ -1,0 +1,1 @@
+import{S as e}from"./PageHeader-wNr3tcQv.js";var t={run:()=>e.get(`/mcp/check`),runLive:()=>e.get(`/mcp/check?live=1`),costs:()=>e.get(`/mcp/costs`),probe:t=>e.post(`/mcp/probe`,{mutation:t})};export{t};

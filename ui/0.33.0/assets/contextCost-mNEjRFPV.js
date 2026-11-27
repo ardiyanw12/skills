@@ -1,0 +1,1 @@
+import{E as e}from"./index-DCopJzWj.js";import{B as t}from"./mcpView-M-zkalNo.js";var n=e=>e<1e3?e.toLocaleString():e>=1e4?`${Math.round(e/1e3)}k`:`${(e/1e3).toFixed(1)}k`,r=e=>e.root?`${e.root}@${e.target}`:e.target,i=n=>n.root?`${t(n.target)} · ${e(n.root)}`:t(n.target);export{i as n,n as r,r as t};
